@@ -1,0 +1,27 @@
+{
+  "name": "bot02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src",
+    "dev" : "nodemon src/bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cygnus-dev/bot02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cygnus-dev/bot02/issues"
+  },
+  "homepage": "https://github.com/cygnus-dev/bot02#readme"
+}
