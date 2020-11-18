@@ -4,7 +4,6 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-Discord.p
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -25,7 +24,7 @@ client.on('message', msg => {
 });
 
 client.on('message', message => {
-  const swearWords = ["cock", "shit", "fuck", "js", "gay", "minecraft", "ziad", "why", "piss", "british", "Fuck"];
+  const swearWords = ["cock", "shit", "fuck", "js", "gay", "minecraft", "ziad", "why", "piss", "british"];
   if( swearWords.some(word => message.content.includes(word)))  {
     message.reply("ohno you said notok work!?!11!");
   }
@@ -38,11 +37,4 @@ client.on('message', msg =>{
 });
 
 
-
-
-// client.on('message', msg =>{
-//   if (msg.con)
-// });
-
-// client.login('NzYxNjI4MDY2MjA3NzYwNDI0.X3dXaQ.ti5HMovLZVUQ-QFvl1Dggxx-LGE');
 client.login(process.env.DISCORDJS_TOKEN);
