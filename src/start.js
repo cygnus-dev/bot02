@@ -23,9 +23,9 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', message => {
+client.on('message', msg => {
   const swearWords = ["cock", "shit", "fuck", "js", "gay", "minecraft", "ziad", "why", "piss", "british"];
-  if( swearWords.some(word => message.content.includes(word)))  {
+  if( swearWords.some(word => msg.content.includes(word)))  {
     message.reply("ohno you said notok work!?!11!");
   }
 })
@@ -35,6 +35,18 @@ client.on('message', msg =>{
     msg.reply('monke!');
     }
 });
+
+client.on('message', msg => {
+  if (msg.content === 'bottleflip') {
+    var luck = Math.floor(Math.random()*(100-0+1)+0);
+    if (luck > 15) {
+      msg.reply('sory, botle died');
+    } else {
+      msg.reply('nice, botle is up')
+    }
+    
+  }
+})
 
 
 client.login(process.env.DISCORDJS_TOKEN);
