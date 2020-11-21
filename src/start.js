@@ -26,7 +26,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   const swearWords = ["cock", "shit", "fuck", "js", "gay", "minecraft", "ziad", "why", "piss", "british"];
   if( swearWords.some(word => msg.content.includes(word)))  {
-    message.reply("ohno you said notok work!?!11!");
+    msg.reply("ohno you said notok work!?!11!");
   }
 })
 
@@ -43,8 +43,7 @@ client.on('message', msg => {
       msg.reply('sory, botle died');
     } else {
       msg.reply('nice, botle is up')
-    }
-    
+    }    
   }
 })
 
